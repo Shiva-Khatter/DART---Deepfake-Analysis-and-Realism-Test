@@ -1,41 +1,6 @@
-<<<<<<< HEAD
-# DeepFake Video Detection
+# DART - Deepfake Analysis and Realism Test 
 
-This project named as DeepFake Video Detection,used to detect any video is deepfake or not, is a web app whose backend host a pre trained model  and runs in flask. You can run this project on your local machine as well as on cloud very easily.
-
-
-
-# Environment Setup
-
-Make sure Anaconda is installed and launch anaconda prompt and navigate to root directory in the anaconda prompt
-
-create venv
-
-```shell
-conda create -n deepfakedetection python=3.10
-```
-
-Activate
-
-```shell
-conda activate deepfakedetection 
-```
-
-In order to set your environment up to run the code here, first install all requirements:
-
-```shell
-pip install -r requirements.txt
-```
-
-run the app.py file 
-
-```shell
-python app.py
-```
-
-Once you see this url - http://127.0.0.1:5000/ in logs, open it in browser.
-
-Now your setup is ready.
-=======
-# DART---Deepfake-Analysis-and-Realism-Test
->>>>>>> 11bea7bacc6bccb658742e790952590615f05f5a
+This project named as DeepFake Video Detection,used to detect any video is deepfake or not, is a web app whose backend host a pre trained model  and runs in flask. 
+DART is a cutting-edge project designed to tackle the rising challenge of deepfakes—synthetic media crafted by blending "Deep Learning" with deceptive "Fake" content. As deepfake tech, powered by tools like Generative Adversarial Networks (GANs), gets scarily good, industries from entertainment to journalism are racing to keep up. Big players like Meta and Microsoft are pouring resources into detection, and DART steps into that arena with a mission: unmasking forged faces and flagging manipulated videos.
+DART is a cutting-edge project designed to tackle the rising challenge of deepfakes—synthetic media crafted by blending "Deep Learning" with deceptive "Fake" content. As deepfake tech, powered by tools like Generative Adversarial Networks (GANs), gets scarily good, industries from entertainment to journalism are racing to keep up. Big players like Meta and Microsoft are pouring resources into detection, and DART steps into that arena with a mission: unmasking forged faces and flagging manipulated videos.
+This isn’t just tech for tech’s sake—deepfakes are shaking up trust online, and DART’s my stab at pushing back. Future plans? Maybe a GAN of my own to outsmart the fakers at their own game.
