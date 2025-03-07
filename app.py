@@ -6,7 +6,7 @@ import os
 
 app = Flask(__name__)
 
-# Load the pre-trained model
+# Loading the pre-trained model
 model = tf.keras.models.load_model('./model/deepfake_video_model.h5')
 
 # Define constants
@@ -14,7 +14,7 @@ IMG_SIZE = 224
 MAX_SEQ_LENGTH = 20
 NUM_FEATURES = 2048
 
-# Define the feature extractor (InceptionV3)
+# Defining the feature extractor (InceptionV3)
 def build_feature_extractor():
     feature_extractor = tf.keras.applications.InceptionV3(
         weights="imagenet",
@@ -32,7 +32,7 @@ def build_feature_extractor():
 
 feature_extractor = build_feature_extractor()
 
-# Utility function to load and process video
+# Utility function for loading and processing the videos
 def load_video(path, max_frames=0, resize=(IMG_SIZE, IMG_SIZE)):
     cap = cv2.VideoCapture(path)
     frames = []
@@ -60,7 +60,7 @@ def crop_center_square(frame):
     start_y = (y // 2) - (min_dim // 2)
     return frame[start_y : start_y + min_dim, start_x : start_x + min_dim]
 
-# Utility function to prepare video for prediction
+# Utility function for preparing the videos for prediction
 def prepare_single_video(frames):
     frames = frames[None, ...]
     frame_mask = np.zeros(shape=(1, MAX_SEQ_LENGTH,), dtype="bool")
@@ -93,9 +93,9 @@ def predict():
     
     prediction = model.predict([frame_features, frame_mask])[0]
     result = 'FAKE' if prediction >= 0.51 else 'REAL'
-    confidence = float(prediction)  # Convert to Python float for JSON serialization
+    confidence = float(prediction)  # Converting to Python float for JSON serialization
     
-    os.remove(video_path)  # Cleaning up the uploaded video
+    os.remove(video_path)  # Cleaninging up the uploaded video
     
     return jsonify({'result': result, 'confidence': confidence})
 
