@@ -1,41 +1,30 @@
-<<<<<<< HEAD
+
 # DeepFake Video Detection
 
-This project named as DeepFake Video Detection,used to detect any video is deepfake or not, is a web app whose backend host a pre trained model  and runs in flask. You can run this project on your local machine as well as on cloud very easily.
+## Introduction to DeepFakes
 
+DeepFake is a combination of "Deep Learning" and "Fake," referring to the process of replacing someone's likeness in an image or video with someone else's using advanced technologies like Deep Artificial Neural Networks. This phenomenon has gained significant traction, particularly in the film industry, and poses a substantial threat to news organizations and the integrity of digital content. Major companies, including Google, are heavily investing in countering DeepFakes by releasing large datasets to train models that help combat this issue.
 
+As Generative Adversarial Networks (GANs) that generate DeepFakes continue to improve, there is a pressing need for effective detection methods. The potential to create new GAN models that incorporate knowledge about combating existing models makes it increasingly challenging for current technologies to keep pace. This project aims to address this challenge by developing a robust tool for detecting deepfake videos.
 
-# Environment Setup
+## Project Overview
 
-Make sure Anaconda is installed and launch anaconda prompt and navigate to root directory in the anaconda prompt
+This project is a web application designed to detect deepfake videos using advanced machine learning techniques. The backend is powered by a pre-trained model that leverages Convolutional Neural Networks (CNNs) with InceptionV3 architecture and Recurrent Neural Networks (RNNs) utilizing Gated Recurrent Units (GRUs).
 
-create venv
+## Key Features
+- **High Accuracy**: Achieved an impressive accuracy in detecting deepfake videos.
+- **Real-Time Analysis**: Deployed using Flask, enabling real-time video analysis.
+- **Scalability**: Successfully processed over 400 video uploads during testing, demonstrating the tool's efficiency and reliability.
 
-```shell
-conda create -n deepfakedetection python=3.10
-```
+## Deployment
+This application can be easily run on your local machine or deployed to the cloud, making it accessible for various use cases.
 
-Activate
+## Future Work
+Initially, the focus will be on detecting forged faces, followed by the development of a comprehensive model for detecting deepfake videos.
 
-```shell
-conda activate deepfakedetection 
-```
+I am willing to share the code and provide further information if needed. Feel free to reach out with any questions or inquiries!
 
-In order to set your environment up to run the code here, first install all requirements:
+For accessing the dataset kindly seek access and share a note on what kind of project you are doing and require the dataset for!
 
-```shell
-pip install -r requirements.txt
-```
+### Dataset Link- https://drive.google.com/drive/folders/1tnh3j2Bm2C_L6GMPX3uhJSha08d7fa-H?usp=sharing
 
-run the app.py file 
-
-```shell
-python app.py
-```
-
-Once you see this url - http://127.0.0.1:5000/ in logs, open it in browser.
-
-Now your setup is ready.
-=======
-# DART---Deepfake-Analysis-and-Realism-Test
->>>>>>> 11bea7bacc6bccb658742e790952590615f05f5a
