@@ -19,10 +19,9 @@ This project is a web application designed to detect deepfake videos using advan
 ## Deployment
 This application can be easily run on your local machine or deployed to the cloud, making it accessible for various use cases.
 
-## Future Work
-Initially, the focus will be on detecting forged faces, followed by the development of a comprehensive model for detecting deepfake videos.
+Initially, the focus was on simply detecting forged faces, followed by the development of a comprehensive model for detecting deepfake videos.
 
-I am willing to share the code and provide further information if needed. Feel free to reach out with any questions or inquiries!
+I am willing to share the code, dataset and provide further information if needed. Feel free to reach out with any questions or inquiries!
 
 For accessing the dataset kindly seek access and share a note on what kind of project you are doing and require the dataset for!
 
