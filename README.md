@@ -14,7 +14,7 @@ This project is a web application designed to detect deepfake videos using advan
 ## Key Features
 - **High Accuracy**: Achieved an impressive accuracy in detecting deepfake videos.
 - **Real-Time Analysis**: Deployed using Flask, enabling real-time video analysis.
-- **Scalability**: Successfully processed over 400 video uploads during testing, demonstrating the tool's efficiency and reliability.
+- **Scalability**: Successfully processed about 450 video uploads during testing, demonstrating the tool's efficiency and reliability.
 
 ## Deployment
 This application can be easily run on your local machine or deployed to the cloud, making it accessible for various use cases.
