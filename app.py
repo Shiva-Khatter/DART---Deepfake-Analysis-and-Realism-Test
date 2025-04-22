@@ -6,7 +6,7 @@ import os
 
 app = Flask(__name__)
 
-# Load the pre-trained model
+# Loading the pre-trained model
 model = tf.keras.models.load_model('./model/deepfake_video_model.h5')
 
 # Define constants
@@ -14,7 +14,7 @@ IMG_SIZE = 224
 MAX_SEQ_LENGTH = 20
 NUM_FEATURES = 2048
 
-# Define the feature extractor (InceptionV3)
+# Defining the feature extractor (InceptionV3)
 def build_feature_extractor():
     feature_extractor = tf.keras.applications.InceptionV3(
         weights="imagenet",
