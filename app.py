@@ -17,6 +17,7 @@ MAX_SEQ_LENGTH = 20
 NUM_FEATURES = 2048
 
 # Defining the feature extractor (InceptionV3)
+
 def build_feature_extractor():
     feature_extractor = tf.keras.applications.InceptionV3(
         weights="imagenet",
@@ -35,6 +36,7 @@ def build_feature_extractor():
 feature_extractor = build_feature_extractor()
 
 # Utility function to load and process video
+
 def load_video(path, max_frames=0, resize=(IMG_SIZE, IMG_SIZE)):
     cap = cv2.VideoCapture(path)
     frames = []
@@ -55,6 +57,7 @@ def load_video(path, max_frames=0, resize=(IMG_SIZE, IMG_SIZE)):
     return np.array(frames)
 
 # Function to crop the center square of a video frame
+
 def crop_center_square(frame):
     y, x = frame.shape[0:2]
     min_dim = min(y, x)
@@ -63,6 +66,7 @@ def crop_center_square(frame):
     return frame[start_y : start_y + min_dim, start_x : start_x + min_dim]
 
 # Utility function to prepare video for prediction
+
 def prepare_single_video(frames):
     frames = frames[None, ...]
     frame_mask = np.zeros(shape=(1, MAX_SEQ_LENGTH,), dtype="bool")
