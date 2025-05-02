@@ -16,7 +16,7 @@ IMG_SIZE = 224
 MAX_SEQ_LENGTH = 20
 NUM_FEATURES = 2048
 
-# Defining the feature extractor (InceptionV3)
+# Defining   the feature extractor (InceptionV3)
 
 def build_feature_extractor():
     feature_extractor = tf.keras.applications.InceptionV3(
