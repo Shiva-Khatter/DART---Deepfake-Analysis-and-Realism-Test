@@ -6,7 +6,7 @@ import os
 
 app = Flask(__name__)
 
-# Loading the pre-trained model
+# Loading the pre-trained model 
 
 model = tf.keras.models.load_model('./model/deepfake_video_model.h5')
 
