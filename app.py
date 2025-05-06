@@ -25,6 +25,7 @@ def build_feature_extractor():
         pooling="avg",
         input_shape=(IMG_SIZE, IMG_SIZE, 3),
     )
+    
     preprocess_input = tf.keras.applications.inception_v3.preprocess_input
 
     inputs = tf.keras.Input((IMG_SIZE, IMG_SIZE, 3))
