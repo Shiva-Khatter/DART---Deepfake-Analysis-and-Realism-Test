@@ -101,7 +101,7 @@ def predict():
     
     prediction = model.predict([frame_features, frame_mask])[0]
     result = 'FAKE' if prediction >= 0.51 else 'REAL'
-    confidence = float(prediction)      # Convert to Python float for JSON serialization
+    confidence = float(prediction)      # Converting to Python float for JSON serialization
     
     os.remove(video_path)     # Cleaning up the uploaded video
     
