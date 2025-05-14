@@ -6,7 +6,6 @@
 
 DeepFake is a combination of "Deep Learning" and "Fake," referring to the process of replacing someone's likeness in an image or video with someone else's using advanced technologies like Deep Artificial Neural Networks. This phenomenon has gained significant traction, particularly in the film industry, and poses a substantial threat to news organizations and the integrity of digital content. Major companies, including Google, are heavily investing in countering DeepFakes by releasing large datasets to train models that help combat this issue.
 
-
 As Generative Adversarial Networks (GANs) that generate DeepFakes continue to improve, there is a pressing need for effective detection methods. The potential to create new GAN models that incorporate knowledge about combating existing models makes it increasingly challenging for current technologies to keep pace. This project aims to address this challenge by developing a robust tool for detecting deepfake videos.
 
 ## Project Overview
