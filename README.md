@@ -12,7 +12,7 @@ As Generative Adversarial Networks (GANs) that generate DeepFakes continue to im
 This project is a web application designed to detect deepfake videos using advanced machine learning techniques. The backend is powered by a pre-trained model that leverages Convolutional Neural Networks (CNNs) with InceptionV3 architecture and Recurrent Neural Networks (RNNs) utilizing Gated Recurrent Units (GRUs).
 
 ## Key Features
-- **High Accuracy**: Achieved an impressive accuracy in detecting deepfake videos.
+- **High Accuracy**: Achieved an impressive accuracy in detecting deepfake videos. 
 - **Real-Time Analysis**: Deployed using Flask, enabling real-time video analysis.
 - **Scalability**: Successfully processed about 450 video uploads during testing, demonstrating the tool's efficiency and reliability.
 
