@@ -7,7 +7,7 @@ DeepFake is a combination of "Deep Learning" and "Fake," referring to the proces
 
 As Generative Adversarial Networks (GANs) that generate DeepFakes continue to improve, there is a pressing need for effective detection methods. The potential to create new GAN models that incorporate knowledge about combating existing models makes it increasingly challenging for current technologies to keep pace. This project aims to address this challenge by developing a robust tool for detecting deepfake videos.
 
-## Project Overview
+## Project Overview 
       
 This project is a web application designed to detect deepfake videos using advanced machine learning techniques. The backend is powered by a pre-trained model that leverages Convolutional Neural Networks (CNNs) with InceptionV3 architecture and Recurrent Neural Networks (RNNs) utilizing Gated Recurrent Units (GRUs).
 
@@ -26,4 +26,3 @@ I am willing to share the code, dataset and provide further information if neede
 For accessing the dataset kindly seek access and share a note on what kind of project you are doing and require the dataset for!
 
 ### Dataset Link- https://drive.google.com/drive/folders/1tnh3j2Bm2C_L6GMPX3uhJSha08d7fa-H?usp=sharing
- 
